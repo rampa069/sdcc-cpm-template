@@ -1,0 +1,12 @@
+*.s
+*.arf
+*.com
+*.ixd
+*.rel
+*.sym
+*.lst
+*.noi
+*.map
+bin/*
+lbin/*
+*~
