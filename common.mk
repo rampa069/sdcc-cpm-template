@@ -1,7 +1,10 @@
 # Prefixes
 COMPILER_PREFIX = /usr/local/
 #COMPILER_PREFIX = $(SDCC_PREFIX)
-COMPILER_LIBS = $(COMPILER_PREFIX)/share/sdcc/lib/z80/
+ARCH=z180
+#ARCH=z80
+COMPILER_LIBS = $(COMPILER_PREFIX)/share/sdcc/lib/$(ARCH)/
+
 
 # Options
 QUIET = @
@@ -35,7 +38,7 @@ ESRC_DIR = esrc/
 INCLUDE_DIR = -I$(SRC_DIR)/include -I$(SRC_DIR)
 
 # Compilation / Assembly / Linking flags
-CCC_FLAGS = -c -mz80 -D__SDCC__=1 $(INCLUDE_DIR)
+CCC_FLAGS = -c -m$(ARCH) -D__SDCC__=1 $(INCLUDE_DIR)
 CAS_FLAGS = -plosff 
 CLD_FLAGS = 
 

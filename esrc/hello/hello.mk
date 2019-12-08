@@ -1,4 +1,4 @@
-example-hello: $(BIN_DIR)/hello.com
+hello: $(BIN_DIR)/hello.com
 
 $(BIN_DIR)/hello.com:	tools $(BIN_DIR)/hello.ihx
 	$(LBIN_DIR)/load $(BIN_DIR)/hello
