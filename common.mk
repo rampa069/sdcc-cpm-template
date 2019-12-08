@@ -1,8 +1,9 @@
 # Prefixes
 COMPILER_PREFIX = /usr/local/
 #COMPILER_PREFIX = $(SDCC_PREFIX)
-ARCH=z180
-#ARCH=z80
+#ARCH=z180
+#ARCH=ez80_z80
+ARCH=z80
 COMPILER_LIBS = $(COMPILER_PREFIX)/share/sdcc/lib/$(ARCH)/
 
 
